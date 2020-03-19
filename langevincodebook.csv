@@ -1,0 +1,119 @@
+﻿TEXT FILE COLUMN,CATEGORY,NAME,DATA COLLECTION SOURCE,TYPE,DESCRIPTION,UNITS (if applicable),CATEGORIES (if applicable)
+1,GENERAL,Time,--,Discrete,Absolute time (MATLAB),--,--
+2,GENERAL,Occupant Number,--,Discrete,Number of occupant in field study,--,--
+3,GENERAL,Occupancy 1,Daily/2 Week Surveys,Discrete,Expected occupancy state for whole study,--,1 = Occupied ; 0 = Not Occupied
+4,GENERAL,Occupancy 2,Daily/2 Week Surveys,Discrete,Expected occupancy state for daily surveying period only,--,1 = Occupied ; 0 = Not Occupied
+5,GENERAL,Survey Time,Daily Surveys,Discrete,Time of day of survey response (if there is one @ time step),--,1 = Morning Survey ; 2 = Late Morning Survey ; 3 = Afternoon Survey
+6,ENVIRONMENT,INDOOR Ambient Temp.,HOBO datalogger,Continuous,Logged either via HOBO U12 @ desk or nearby thermostat,ºC,--
+7,ENVIRONMENT,INDOOR Relative Humidity,HOBO datalogger,Continuous,Logged via HOBO U12 @ desk,%,--
+8,ENVIRONMENT,INDOOR Air Velocity,HOBO datalogger,Continuous,Logged via HOBO U12 + T-DCI-F900-S-O air velocity sensor,m/s,--
+9,ENVIRONMENT,INDOOR Mean Radiant Temp.,HOBO datalogger,Continuous,Logged via HOBO U12 + thermocouple in 40 mm black matte ping pong ball ,ºC,--
+10,ENVIRONMENT,INDOOR Lumens,HOBO datalogger,Continuous,Logged via HOBO U12,lumens/m2 *REGENERATE,--
+11,ENVIRONMENT,INDOOR CO2,HOBO datalogger,Continuous,Logged via HOBO Telair 7001 sensor,ppm,--
+12,ENVIRONMENT,OUTDOOR Ambient Temp.,Weather Analytics,Continuous,"Downloaded from Weather Analytics, Center City PHL grid point",ºC,--
+13,ENVIRONMENT,OUTDOOR Relative Humidity,Weather Analytics,Continuous,"Downloaded from Weather Analytics, Center City PHL grid point",%,--
+14,ENVIRONMENT,OUTDOOR Air Velocity,Weather Analytics,Continuous,"Downloaded from Weather Analytics, Center City PHL grid point",m/s,--
+15,PERSONAL CHARACTERISTICS,Metabolic Rate (last 15 mins.),Daily Surveys,Continuous,"Weighted average of reported activities, based on ASH Std-55 ",MET,--
+16,PERSONAL CHARACTERISTICS,Metabolic Rate (last 1 hour),Daily Surveys,Continuous,"Weighted average of reported activities, based on ASH Std-55",MET,--
+17,PERSONAL CHARACTERISTICS,Clothing Level,Daily Surveys,Continuous,Based on ASH Std-55 Clo values + ISO 7730 clo values where needed,CLO,--
+18,PERSONAL CHARACTERISTICS,Clothing Level (+ Chair),Daily Surveys,Continuous,Chair = 0.1 Clo,CLO,--
+19,PERSONAL CHARACTERISTICS,Min. Accept. Sensation (right now),Daily Surveys,Discrete,Coldest acceptable thermal sensation at that moment on ASH scale,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+20,PERSONAL CHARACTERISTICS,Med. Accept. Sensation (right now),Daily Surveys,Discrete,Median of thermally acceptable sensation range on ASH scale,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+21,PERSONAL CHARACTERISTICS,Max. Accept. Sensation (right now),Daily Surveys,Discrete,Warmest acceptable thermal sensation at that moment on ASH scale,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+22,PERSONAL CHARACTERISTICS,Min. Accept (seasonal median),Daily Surveys,Discrete,Median of min. acceptable sensations reported across each season,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+23,PERSONAL CHARACTERISTICS,Med. Accept (seasonal median),Daily Surveys,Discrete,Median of the median acceptable sensations reported across each season,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+24,PERSONAL CHARACTERISTICS,Max. Accept (seasonal median),Daily Surveys,Discrete,Median of  max. acceptable sensations reported across each season,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+25,PERSONAL CHARACTERISTICS,Thermal Preference (right now),Daily Surveys,Discrete,Desired thermal sensation at that moment,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+26,PERSONAL CHARACTERISTICS,Gender,Background Survey,Discrete,--,--,1=Male ; 2 = Female
+27,PERSONAL CHARACTERISTICS,Age,Background Survey,Discrete,--,Years,--
+28,PERSONAL CHARACTERISTICS,Office Type,Background Survey,Discrete,--,--,1=Private Office (Single) ; 2 = Private Office (Shared) ; 3 = Cubicle; 4 = Open Desk ; 5 = Public Area (i.e. lobby)
+29,PERSONAL CHARACTERISTICS,Floor Number,Background Survey,Discrete,--,--,1 = Basement ; 2 = Ground Floor; 3 = 2nd Floor; 4 = 3rd Floor
+30,PERSONAL CHARACTERISTICS,Location on Floor Plan,Background Survey,Discrete,--,--,1 = Core ; 2 = Perimeter
+31,PERSONAL CHARACTERISTICS,Min. Accept. Sensation (summer),Background Survey,Discrete,Coldest thermal sensation generally acceptable in SUMMER,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+32,PERSONAL CHARACTERISTICS,Min. Accept. Sensation (winter),Background Survey,Discrete,Coldest thermal sensation generally acceptable in WINTER,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+33,PERSONAL CHARACTERISTICS,Med. Accept. Sensation (summer),Background Survey,Discrete,Median of thermal acceptability range reported for SUMMER,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+34,PERSONAL CHARACTERISTICS,Med. Accept. Sensation (winter),Background Survey,Discrete,Median of thermal acceptability range reported for WINTER,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+35,PERSONAL CHARACTERISTICS,Max. Accept. Sensation (summer),Background Survey,Discrete,Warmest thermal sensation generally acceptable in SUMMER,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+36,PERSONAL CHARACTERISTICS,Max. Accept. Sensation (winter),Background Survey,Discrete,Warmest thermal sensation generally acceptable in WINTER,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+37,COMFORT/PRODUCTIVITY/SATISFACTION,General Thermal Comfort (right now),Daily Surveys,Discrete,--,--,1 = Very UNCOMF. ; 2 = UNCOMF. ; 3 = Somewhat UNCOMF. 4 = Somewhat COMF. ; 5 = COMF. ; 6 = Very COMF.
+38,COMFORT/PRODUCTIVITY/SATISFACTION,Thermal Comfort Movement (recently),Daily Surveys,Discrete,--,--,"-1 = Deteriorating ; 0 = Staying the Same; 1 = Improving 2 = Fluctuating *** FIXED, NEED TO REGENERATE FILE"
+39,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: HEAD,Daily Surveys,Discrete,--,--,"Marked as ""1"""
+40,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: CHEST,Daily Surveys,Discrete,--,--,"Marked as ""2"""
+41,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: BACK,Daily Surveys,Discrete,--,--,"Marked as ""3"""
+42,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: PELVIS,Daily Surveys,Discrete,--,--,"Marked as ""4"""
+43,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: ARMS ,Daily Surveys,Discrete,--,--,"Marked as ""5"""
+44,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: HANDS,Daily Surveys,Discrete,--,--,"Marked as ""6"""
+45,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: LEGS,Daily Surveys,Discrete,--,--,"Marked as ""7"""
+46,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: FEET,Daily Surveys,Discrete,--,--,"Marked as ""8"""
+47,COMFORT/PRODUCTIVITY/SATISFACTION,Discomfort Location: ALL OVER,Daily Surveys,Discrete,--,--,"Marked as ""9"""
+48,COMFORT/PRODUCTIVITY/SATISFACTION,Thermal Sensation (right now),Daily Surveys,Discrete,On ASHRAE scale,--,"ASHRAE 7 point scale (-3 = ""Cold"" to +3 = ""Warm"", where 0 = ""Neutral"")"
+49,COMFORT/PRODUCTIVITY/SATISFACTION,Thermal Sensation Movement (recently),Daily Surveys,Discrete,--,--,-1 = Getting Colder ; 0 = Staying the Same ; 1 = Getting Warmer ; 2 = Fluctuating
+50,COMFORT/PRODUCTIVITY/SATISFACTION,"Relative ""Busyness"" (recently)",Daily Surveys,Discrete,Recent workload relative to what is normal,--,1 = Much LESS busy than usual ; 2 = A little LESS busy than usual ; 3 = As busy as usual ; 4 = A little MORE busy than usual ; 5 = Much MORE busy than usual
+51,COMFORT/PRODUCTIVITY/SATISFACTION,Relative Productivity (recently),Daily Surveys,Discrete,Recent productivity relative to what is normal,--,1 = Much LESS productive than usual ; 2 = A little LESS productive than usual ; 3 = As productive as usual ; 4 = A little MORE productive than usual ; 5 = Much MORE productive than usual
+52,COMFORT/PRODUCTIVITY/SATISFACTION,General Satisfaction w/ Amount of Space,Background Survey,Discrete,--,--,1 = Very DISSATISFIED ; 2 = DISSATISFIED ; 3 = Somewhat DISSATISFIED ; 4 = Somewhat SATISFIED ; 5 = SATISFIED ; 6 = Very SATISFIED
+53,COMFORT/PRODUCTIVITY/SATISFACTION,General Satisfaction w/ Privacy,Background Survey,Discrete,--,--,1 = Very DISSATISFIED ; 2 = DISSATISFIED ; 3 = Somewhat DISSATISFIED ; 4 = Somewhat SATISFIED ; 5 = SATISFIED ; 6 = Very SATISFIED
+54,COMFORT/PRODUCTIVITY/SATISFACTION,General Thermal Comfort,Background Survey,Discrete,--,--,1 = Very UNCOMFORTABLE ; 2 = UNCOMFORTABLE ; 3 = Somewhat UNCOMFORTABLE ; 4 = Somewhat COMFORTABLE ; 5 = COMFORTABLE ; 6 = Very COMFORTABLE
+55,COMFORT/PRODUCTIVITY/SATISFACTION,General Satisfaction w/ Perceived Control,Background Survey,Discrete,Satisfaction with perceived degree of control over the thermal environment,--,1 = Very DISSATISFIED ; 2 = DISSATISFIED ; 3 = Somewhat DISSATISFIED ; 4 = Somewhat SATISFIED ; 5 = SATISFIED ; 6 = Very SATISFIED
+56,BEHAVIOR,Fan/Heater Class,--,Discrete,Does the occupant have a fan or heater?,--,"1 = Has Fan ; 2 = Has Heater (else, NaN)"
+57,BEHAVIOR,State of Fan/Heater,WattsUp? Pro meter,Discrete,Logged by WattsUp? Pro meter ,--,1 = ON; 0 = OFF; 255 = Faulty Reading
+58,BEHAVIOR,State of Window,HOBO state logger,Discrete,Logged by HOBO UX-90 state loggers ,--,1 = OPEN; 0 = CLOSED (else NaN)
+59,BEHAVIOR,Current Thermostat COOLING Setpoint,Friends Center BMS,Continuous,Logged by Friends Center BMS system ,ºC,-
+60,BEHAVIOR,Base Thermostat COOLING Setpoint,Friends Center BMS,Continuous,Logged by Friends Center BMS system; NOTE: adjustable by building manager,ºC,-
+61,BEHAVIOR,Current Thermostat HEATING Setpoint,Friends Center BMS,Continuous,Logged by Friends Center BMS system ,ºC,-
+62,BEHAVIOR,Base Thermostat HEATING Setpoint,Friends Center BMS,Continuous,Logged by Friends Center BMS system; NOTE: adjustable by building manager,ºC,-
+63,BEHAVIOR,Clothing Change (recently),Daily Surveys,Discrete,Based on ASH Std. 55 clothing insulation values,--,"0 = None; 1 = Change (1 direction) ; 2 = Change (Up and down) ; 3 = No change, cannot adjust further ; 99 = N/A"
+64,BEHAVIOR,Clothing Change UP (recently),Daily Surveys,Discrete,--,--,0 = No; 1 = Yes ; 99 = N/A
+65,BEHAVIOR,Clothing Change DOWN (recently),Daily Surveys,Discrete,--,--,0 = No; 1 = Yes ; 99 = N/A
+66,BEHAVIOR,Net Clothing Change (recently),Daily Surveys,Continuous,Based on ASH Std. 55 clothing insulation values,CLO, Based on minor change  = +/- 0.08 ; small change = +/- 0.18 ; moderate change = +/- 0.25 ; large change = +/- 0.32; largest change = +/- 0.44
+67,BEHAVIOR,Drinking Beverage?,Daily Surveys,Discrete,--,--,"0 = No; 1 = Yes, @ Room Temp. ; 2 = Yes, COLD; 3 = Yes, WARM ; 4 = Yes, Both WARM and COLD"
+68,BEHAVIOR,Purpose of getting COLD drink,Daily Surveys,Discrete,--,--,1 = Related to Thermal Comfort ; 0 = Not Related to Thermal Comfort
+69,BEHAVIOR,Purpose of getting WARM drink,Daily Surveys,Discrete,--,--,1 = Related to Thermal Comfort ; 0 = Not Related to Thermal Comfort
+70,BEHAVIOR,Action on WINDOW (recently),Daily Surveys,Discrete,--,--,1= OPENED without asking others ; 2 = OPENED after asking others ; 3 = CLOSED without asking others ; 4 = CLOSED after asking others
+71,BEHAVIOR,WINDOW state (right now),Daily Surveys,Discrete,--,--,1= Fully OPEN ; 2 = Partially OPEN ; 3 = CLOSED
+72,BEHAVIOR,How long ago was WINDOW action? ,Daily Surveys,Discrete,--,--,1 = <15 minutes ago ; 2 = 15-30 minutes ago ; 3 = > 30 minutes ago
+73,BEHAVIOR,Action on DOOR (recently),Daily Surveys,Discrete,--,--,1= OPENED without asking others ; 2 = OPENED after asking others ; 3 = CLOSED without asking others ; 4 = CLOSED after asking others
+74,BEHAVIOR,DOOR state (right now),Daily Surveys,Discrete,--,--,1= Fully OPEN ; 2 = Partially OPEN ; 3 = CLOSED
+75,BEHAVIOR,How long ago was DOOR action? ,Daily Surveys,Discrete,--,--,1 = <15 minutes ago ; 2 = 15-30 minutes ago ; 3 = > 30 minutes ago
+76,BEHAVIOR,Action on BLINDS (recently),Daily Surveys,Discrete,--,--,1= OPENED without asking others ; 2 = OPENED after asking others ; 3 = CLOSED without asking others ; 4 = CLOSED after asking others
+77,BEHAVIOR,BLINDS state (right now),Daily Surveys,Discrete,--,--,1= Fully OPEN ; 2 = Partially OPEN ; 3 = CLOSED
+78,BEHAVIOR,How long ago was BLINDS action? ,Daily Surveys,Discrete,--,--,1 = <15 minutes ago ; 2 = 15-30 minutes ago ; 3 = > 30 minutes ago
+79,BEHAVIOR,Action on LOCAL FAN (recently),Daily Surveys,Discrete,--,--,1= TURNED ON without asking others ; 2 = TURNED ON after asking others ; 3 = TURNED OFF without asking others ; 4 = TURNED OFF after asking others
+80,BEHAVIOR,LOCAL FAN state (right now),Daily Surveys,Discrete,--,--,1= On HIGH ; 2 = On LOW/MEDIUM ; 3 = OFF
+81,BEHAVIOR,How long ago was LOCAL FAN action? ,Daily Surveys,Discrete,--,--,1 = <15 minutes ago ; 2 = 15-30 minutes ago ; 3 = > 30 minutes ago
+82,BEHAVIOR,Action on LOCAL HEATER (recently),Daily Surveys,Discrete,--,--,1= TURNED ON without asking others ; 2 = TURNED ON after asking others ; 3 = TURNED OFF without asking others ; 4 = TURNED OFF after asking others
+83,BEHAVIOR,LOCAL HEATER state (right now),Daily Surveys,Discrete,--,--,1= On HIGH ; 2 = On LOW/MEDIUM ; 3 = OFF
+84,BEHAVIOR,How long ago was LOCAL HEATER action? ,Daily Surveys,Discrete,--,--,1 = <15 minutes ago ; 2 = 15-30 minutes ago ; 3 = > 30 minutes ago
+85,BEHAVIOR,Action on THERMOSTAT (recently),Daily Surveys,Discrete,--,--,1= TURNED UP without asking others ; 2 = TURNED UP after asking others ; 3 = TURNED DOWN without asking others ; 4 = TURNED DOWN after asking others
+86,BEHAVIOR,THERMOSTAT state (right now),Daily Surveys,Discrete,--,--,1= Turned UP ; 2 = At base temp. ; 3 = Turned DOWN
+87,BEHAVIOR,How long ago was THERMOSTAT action? ,Daily Surveys,Discrete,--,--,1 = <15 minutes ago ; 2 = 15-30 minutes ago ; 3 = > 30 minutes ago
+88,BEHAVIOR,Reason for no WINDOW action,Daily Surveys,Discrete,--,--,1 = No Need: Comfortable Enough ; 2 = Cannot Adjust Further ; 3 = Would Not Have Helped; 4 = Not Worth Work Disruption ; 5 = Not Worth Asking Others ; 6 = Not OK with Management ; 7 = Not Agreeable to Others ; 8 = Wanted to Use Other Options First ; 9 = Other Person Already Made Adjustment ; 10 = Multiple Reasons
+89,BEHAVIOR,Reason for no DOOR action,Daily Surveys,Discrete,--,--,1 = No Need: Comfortable Enough ; 2 = Cannot Adjust Further ; 3 = Would Not Have Helped; 4 = Not Worth Work Disruption ; 5 = Not Worth Asking Others ; 6 = Not OK with Management ; 7 = Not Agreeable to Others ; 8 = Wanted to Use Other Options First ; 9 = Other Person Already Made Adjustment ; 10 = Multiple Reasons
+90,BEHAVIOR,Reason for no BLINDS action,Daily Surveys,Discrete,--,--,1 = No Need: Comfortable Enough ; 2 = Cannot Adjust Further ; 3 = Would Not Have Helped; 4 = Not Worth Work Disruption ; 5 = Not Worth Asking Others ; 6 = Not OK with Management ; 7 = Not Agreeable to Others ; 8 = Wanted to Use Other Options First ; 9 = Other Person Already Made Adjustment ; 10 = Multiple Reasons
+91,BEHAVIOR,Reason for no LOCAL FAN action,Daily Surveys,Discrete,--,--,1 = No Need: Comfortable Enough ; 2 = Cannot Adjust Further ; 3 = Would Not Have Helped; 4 = Not Worth Work Disruption ; 5 = Not Worth Asking Others ; 6 = Not OK with Management ; 7 = Not Agreeable to Others ; 8 = Wanted to Use Other Options First ; 9 = Other Person Already Made Adjustment ; 10 = Multiple Reasons
+92,BEHAVIOR,Reason for no LOCAL HEATER action,Daily Surveys,Discrete,--,--,1 = No Need: Comfortable Enough ; 2 = Cannot Adjust Further ; 3 = Would Not Have Helped; 4 = Not Worth Work Disruption ; 5 = Not Worth Asking Others ; 6 = Not OK with Management ; 7 = Not Agreeable to Others ; 8 = Wanted to Use Other Options First ; 9 = Other Person Already Made Adjustment ; 10 = Multiple Reasons
+93,BEHAVIOR,Reason for no THERMOSTAT action,Daily Surveys,Discrete,--,--,1 = No Need: Comfortable Enough ; 2 = Cannot Adjust Further ; 3 = Would Not Have Helped; 4 = Not Worth Work Disruption ; 5 = Not Worth Asking Others ; 6 = Not OK with Management ; 7 = Not Agreeable to Others ; 8 = Wanted to Use Other Options First ; 9 = Other Person Already Made Adjustment ; 10 = Multiple Reasons
+94,BEHAVIOR,CLOTHING availability,Background Survey,Discrete,--,--," 0 = Don't Know ; 1 = Not Allowed / Possible ; 2 = I Can Do This, But Choose Not To; 3 = I Do This But Generally Need to Consult Others First ; 4 = I Do This Without Consulting Others"
+95,BEHAVIOR,DRINKS availability,Background Survey,Discrete,--,--," 0 = Don't Know ; 1 = Not Allowed / Possible ; 2 = I Can Do This, But Choose Not To; 3 = I Do This But Generally Need to Consult Others First ; 4 = I Do This Without Consulting Others"
+96,BEHAVIOR,LOCAL HEATER availability,Background Survey,Discrete,--,--," 0 = Don't Know ; 1 = Not Allowed / Possible ; 2 = I Can Do This, But Choose Not To; 3 = I Do This But Generally Need to Consult Others First ; 4 = I Do This Without Consulting Others"
+97,BEHAVIOR,LOCAL FAN availability,Background Survey,Discrete,--,--," 0 = Don't Know ; 1 = Not Allowed / Possible ; 2 = I Can Do This, But Choose Not To; 3 = I Do This But Generally Need to Consult Others First ; 4 = I Do This Without Consulting Others"
+98,BEHAVIOR,THERMOSTAT availability,Background Survey,Discrete,--,--," 0 = Don't Know ; 1 = Not Allowed / Possible ; 2 = I Can Do This, But Choose Not To; 3 = I Do This But Generally Need to Consult Others First ; 4 = I Do This Without Consulting Others"
+99,BEHAVIOR,WINDOW availability,Background Survey,Discrete,--,--," 0 = Don't Know ; 1 = Not Allowed / Possible ; 2 = I Can Do This, But Choose Not To; 3 = I Do This But Generally Need to Consult Others First ; 4 = I Do This Without Consulting Others"
+100,BEHAVIOR,DOOR availability,Background Survey,Discrete,--,--," 0 = Don't Know ; 1 = Not Allowed / Possible ; 2 = I Can Do This, But Choose Not To; 3 = I Do This But Generally Need to Consult Others First ; 4 = I Do This Without Consulting Others"
+101,BEHAVIOR,BLINDS availability,Background Survey,Discrete,--,--," 0 = Don't Know ; 1 = Not Allowed / Possible ; 2 = I Can Do This, But Choose Not To; 3 = I Do This But Generally Need to Consult Others First ; 4 = I Do This Without Consulting Others"
+102,BEHAVIOR,CLOTHING effectiveness,Background Survey,Discrete,--,--,0 = N/A or Don't Know; Very INEFFECTIVE ; 2 = INEFFECTIVE ; 3 = Somewhat INEFFECTIVE ; 4 = Somewhat EFFECTIVE ; 5 = EFFECTIVE ; 6 = Very EFFECTIVE
+103,BEHAVIOR,DRINKS effectiveness,Background Survey,Discrete,--,--,0 = N/A or Don't Know; Very INEFFECTIVE ; 2 = INEFFECTIVE ; 3 = Somewhat INEFFECTIVE ; 4 = Somewhat EFFECTIVE ; 5 = EFFECTIVE ; 6 = Very EFFECTIVE
+104,BEHAVIOR,LOCAL HEATER effectiveness,Background Survey,Discrete,--,--,0 = N/A or Don't Know; Very INEFFECTIVE ; 2 = INEFFECTIVE ; 3 = Somewhat INEFFECTIVE ; 4 = Somewhat EFFECTIVE ; 5 = EFFECTIVE ; 6 = Very EFFECTIVE
+105,BEHAVIOR,LOCAL FAN effectiveness,Background Survey,Discrete,--,--,0 = N/A or Don't Know; Very INEFFECTIVE ; 2 = INEFFECTIVE ; 3 = Somewhat INEFFECTIVE ; 4 = Somewhat EFFECTIVE ; 5 = EFFECTIVE ; 6 = Very EFFECTIVE
+106,BEHAVIOR,THERMOSTAT effectiveness,Background Survey,Discrete,--,--,0 = N/A or Don't Know; Very INEFFECTIVE ; 2 = INEFFECTIVE ; 3 = Somewhat INEFFECTIVE ; 4 = Somewhat EFFECTIVE ; 5 = EFFECTIVE ; 6 = Very EFFECTIVE
+107,BEHAVIOR,WINDOW effectiveness,Background Survey,Discrete,--,--,0 = N/A or Don't Know; Very INEFFECTIVE ; 2 = INEFFECTIVE ; 3 = Somewhat INEFFECTIVE ; 4 = Somewhat EFFECTIVE ; 5 = EFFECTIVE ; 6 = Very EFFECTIVE
+108,BEHAVIOR,DOOR effectiveness,Background Survey,Discrete,--,--,0 = N/A or Don't Know; Very INEFFECTIVE ; 2 = INEFFECTIVE ; 3 = Somewhat INEFFECTIVE ; 4 = Somewhat EFFECTIVE ; 5 = EFFECTIVE ; 6 = Very EFFECTIVE
+109,BEHAVIOR,BLINDS effectiveness,Background Survey,Discrete,--,--,0 = N/A or Don't Know; Very INEFFECTIVE ; 2 = INEFFECTIVE ; 3 = Somewhat INEFFECTIVE ; 4 = Somewhat EFFECTIVE ; 5 = EFFECTIVE ; 6 = Very EFFECTIVE
+110,BEHAVIOR,Reported Discomfort to Management,Daily Surveys,Discrete,--,--,"0 = No; 1 = Yes ; 2 = No, but my coworker did"
+111,PERSONAL VALUES,Chooses set point that maximizes PRODUCTIVITY,Background Survey,Discrete,To what degree are you similar to hypothetical person adjusting thermostat in office?,--, 0 = Don't Know ; 1 = Not Like Me At All ; 2 = Not Like Me ; 3 = A Little Like Me ; 4 = Somewhat Like Me ; 5 = Like Me ; 6 = Very Much Like Me
+112,PERSONAL VALUES,Chooses set point that maximized COMFORT/PLEASURE,Background Survey,Discrete,To what degree are you similar to hypothetical person adjusting thermostat in office?,--, 0 = Don't Know ; 1 = Not Like Me At All ; 2 = Not Like Me ; 3 = A Little Like Me ; 4 = Somewhat Like Me ; 5 = Like Me ; 6 = Very Much Like Me
+113,PERSONAL VALUES,Wishes set point to stay at setting they choose,Background Survey,Discrete,To what degree are you similar to hypothetical person adjusting thermostat in office?,--, 0 = Don't Know ; 1 = Not Like Me At All ; 2 = Not Like Me ; 3 = A Little Like Me ; 4 = Somewhat Like Me ; 5 = Like Me ; 6 = Very Much Like Me
+114,PERSONAL VALUES,Chooses set point that is most agreeable to OTHERS,Background Survey,Discrete,To what degree are you similar to hypothetical person adjusting thermostat in office?,--, 0 = Don't Know ; 1 = Not Like Me At All ; 2 = Not Like Me ; 3 = A Little Like Me ; 4 = Somewhat Like Me ; 5 = Like Me ; 6 = Very Much Like Me
+115,PERSONAL VALUES,Chooses set point that is most ENERGY EFFICIENT,Background Survey,Discrete,To what degree are you similar to hypothetical person adjusting thermostat in office?,--, 0 = Don't Know ; 1 = Not Like Me At All ; 2 = Not Like Me ; 3 = A Little Like Me ; 4 = Somewhat Like Me ; 5 = Like Me ; 6 = Very Much Like Me
+116,PERSONAL VALUES,Chooses set point most in line with MGMT policies,Background Survey,Discrete,To what degree are you similar to hypothetical person adjusting thermostat in office?,--, 0 = Don't Know ; 1 = Not Like Me At All ; 2 = Not Like Me ; 3 = A Little Like Me ; 4 = Somewhat Like Me ; 5 = Like Me ; 6 = Very Much Like Me
+117,PERSONAL VALUES,Choooses set point most TYPICAL of office setting,Background Survey,Discrete,To what degree are you similar to hypothetical person adjusting thermostat in office?,--, 0 = Don't Know ; 1 = Not Like Me At All ; 2 = Not Like Me ; 3 = A Little Like Me ; 4 = Somewhat Like Me ; 5 = Like Me ; 6 = Very Much Like Me
+118,MODEL,Predicted Mean Vote (PMV),HOBO + Daily Surveys,Continuous,"Fanger (1970) PMV = f(Tamb, Tmeanrad, RH, Avel, Clo, Met)","Limited to [-3,3]",Corresponds to ASHRAE 7 point scale
